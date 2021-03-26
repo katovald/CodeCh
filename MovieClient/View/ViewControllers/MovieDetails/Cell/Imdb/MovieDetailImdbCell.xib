@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailImdbCell" customModule="MovieClient" customModuleProvider="target">
+            <connections>
+                <outlet property="allContentView" destination="iN0-l3-epB" id="chu-cs-agW"/>
+                <outlet property="imdbUrlLabel" destination="szK-y7-3hc" id="tTx-hJ-Upe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJb-fb-Rxd" userLabel="Content">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jokgrimally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="szK-y7-3hc">
+                            <rect key="frame" x="25" y="12" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="mainBlue"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="szK-y7-3hc" secondAttribute="trailing" constant="25" id="Hi6-S4-r3V"/>
+                        <constraint firstItem="szK-y7-3hc" firstAttribute="top" secondItem="YJb-fb-Rxd" secondAttribute="top" constant="12" id="epm-cm-Jg2"/>
+                        <constraint firstItem="szK-y7-3hc" firstAttribute="leading" secondItem="YJb-fb-Rxd" secondAttribute="leading" constant="25" id="n1r-xi-XlG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YJb-fb-Rxd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QH3-zU-eVd"/>
+                <constraint firstAttribute="bottom" secondItem="YJb-fb-Rxd" secondAttribute="bottom" id="cLu-qL-AZC"/>
+                <constraint firstItem="YJb-fb-Rxd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oeN-LT-pdV"/>
+                <constraint firstItem="YJb-fb-Rxd" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="tD3-SM-yQq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="47.826086956521742" y="-78.013392857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainBlue">
+            <color red="0.20392156862745098" green="0.53333333333333333" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

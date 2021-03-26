@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailGenreCell" customModule="TheMovieDBClient" customModuleProvider="target">
+            <connections>
+                <outlet property="allContentView" destination="iN0-l3-epB" id="iOF-Hb-Tpr"/>
+                <outlet property="genreLabel" destination="9mx-fR-7ul" id="ggE-S6-IwA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lga-g3-3ne" userLabel="Content">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60c-2T-oTS" userLabel="Margins">
+                            <rect key="frame" x="25" y="0.0" width="350" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mx-fR-7ul">
+                                    <rect key="frame" x="33" y="11" width="317" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="9mx-fR-7ul" firstAttribute="centerY" secondItem="60c-2T-oTS" secondAttribute="centerY" id="KGY-WR-zA4"/>
+                                <constraint firstAttribute="trailing" secondItem="9mx-fR-7ul" secondAttribute="trailing" id="V1p-su-3zS"/>
+                                <constraint firstItem="9mx-fR-7ul" firstAttribute="leading" secondItem="60c-2T-oTS" secondAttribute="leading" constant="33" id="ugs-UT-pAL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="60c-2T-oTS" secondAttribute="bottom" id="EgS-gc-Ydi"/>
+                        <constraint firstAttribute="trailing" secondItem="60c-2T-oTS" secondAttribute="trailing" constant="25" id="iZ6-Lm-ZV3"/>
+                        <constraint firstItem="60c-2T-oTS" firstAttribute="top" secondItem="lga-g3-3ne" secondAttribute="top" id="rsj-fA-6d5"/>
+                        <constraint firstItem="60c-2T-oTS" firstAttribute="leading" secondItem="lga-g3-3ne" secondAttribute="leading" constant="25" id="v7i-pJ-JsQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lga-g3-3ne" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cWx-rX-0xm"/>
+                <constraint firstItem="lga-g3-3ne" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m0c-2q-Bkl"/>
+                <constraint firstItem="lga-g3-3ne" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="oo2-Ko-si7"/>
+                <constraint firstAttribute="bottom" secondItem="lga-g3-3ne" secondAttribute="bottom" id="oyP-I7-cXW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="-77.008928571428569"/>
+        </view>
+    </objects>
+</document>

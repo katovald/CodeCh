@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L62-JP-ez9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Details-->
+        <scene sceneID="hVr-5W-lV4">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L62-JP-ez9" customClass="MovieDetailsVC" customModule="TheMovieDBClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3QH-hH-Fdk" userLabel="Screen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvh-bh-OJ9" userLabel="ScreenContent">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SLn-yx-zsA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="mainFucsia"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="L62-JP-ez9" id="Wq8-Hd-zkh"/>
+                                            <outlet property="delegate" destination="L62-JP-ez9" id="4qf-FO-r9k"/>
+                                        </connections>
+                                    </tableView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="egx-ny-czx">
+                                        <rect key="frame" x="197" y="434.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="mainFucsia"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SLn-yx-zsA" secondAttribute="trailing" id="MHB-x2-J7g"/>
+                                    <constraint firstItem="egx-ny-czx" firstAttribute="centerX" secondItem="SLn-yx-zsA" secondAttribute="centerX" id="b6K-6L-VdK"/>
+                                    <constraint firstItem="egx-ny-czx" firstAttribute="centerY" secondItem="SLn-yx-zsA" secondAttribute="centerY" multiplier="1.1" id="fK1-EP-9Wd"/>
+                                    <constraint firstAttribute="bottom" secondItem="SLn-yx-zsA" secondAttribute="bottom" id="jHt-79-FmJ"/>
+                                    <constraint firstItem="SLn-yx-zsA" firstAttribute="leading" secondItem="Dvh-bh-OJ9" secondAttribute="leading" id="w0C-OH-5Ep"/>
+                                    <constraint firstItem="SLn-yx-zsA" firstAttribute="top" secondItem="Dvh-bh-OJ9" secondAttribute="top" id="yhn-0U-xux"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="mainFucsia"/>
+                        <constraints>
+                            <constraint firstItem="Dvh-bh-OJ9" firstAttribute="trailing" secondItem="Tuu-hG-7j8" secondAttribute="trailing" id="KaE-2Y-Hhn"/>
+                            <constraint firstAttribute="bottom" secondItem="Dvh-bh-OJ9" secondAttribute="bottom" id="rqE-Zh-JLe"/>
+                            <constraint firstItem="Dvh-bh-OJ9" firstAttribute="top" secondItem="Tuu-hG-7j8" secondAttribute="top" id="scr-6p-MMH"/>
+                            <constraint firstItem="Dvh-bh-OJ9" firstAttribute="leading" secondItem="Tuu-hG-7j8" secondAttribute="leading" id="wDH-Q8-EEe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tuu-hG-7j8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie Details" id="OwV-Qi-pYQ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="   "/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="spinner" destination="egx-ny-czx" id="me8-eC-sR8"/>
+                        <outlet property="table" destination="SLn-yx-zsA" id="YkR-EN-OMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znt-W0-WYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="31.473214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainFucsia">
+            <color red="0.74117647058823533" green="0.16862745098039217" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="mainFucsia"/>
+</document>

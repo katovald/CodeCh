@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  MovieClient
+
+  Created by  Jose Valdez.
+*/
+
+// English
+
+// General
+"appName" = "MovieClient";
+
+// Movie Catalog
+"movieCatalogCredentialsError" = "Invalid credentials, please try again";
+"movieCatalogGeneralError" = "An internal error has ocurred, please try again";
+"movieCatalogServerError" = "Server is not returning data, please try again";

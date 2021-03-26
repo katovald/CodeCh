@@ -1,0 +1,82 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Hero (1.6.1)
+  - Kingfisher (6.2.1)
+  - KVNProgress (2.3.5)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - PolyglotLocalization (0.8.1)
+  - ReachabilitySwift (5.0.0)
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RealmSwift (10.7.2):
+    - Realm (= 10.7.2)
+  - Result (5.0.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SwiftLint (0.43.1)
+  - TPKeyboardAvoiding (1.3.5)
+  - UAObfuscatedString (0.5.1)
+
+DEPENDENCIES:
+  - Hero
+  - Kingfisher
+  - KVNProgress
+  - Moya
+  - PolyglotLocalization
+  - ReachabilitySwift
+  - RealmSwift
+  - Result
+  - RxCocoa
+  - RxSwift
+  - SwiftLint
+  - TPKeyboardAvoiding
+  - UAObfuscatedString
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Hero
+    - Kingfisher
+    - KVNProgress
+    - Moya
+    - PolyglotLocalization
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - Result
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+    - TPKeyboardAvoiding
+    - UAObfuscatedString
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  PolyglotLocalization: 26b542bab589bc3cda9f007cdc3491c9727fd06b
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+  Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
+  UAObfuscatedString: 34850d89100c7aff99129ee56acd433fa5ed3aef
+
+PODFILE CHECKSUM: 64ad8ecbcc437e61904f021fa139e90771073402
+
+COCOAPODS: 1.10.1
